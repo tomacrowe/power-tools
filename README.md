@@ -54,7 +54,7 @@ Upgrade to 2.9.0 without downloading, assuming you already have the qimg file on
 
 ## Add Qumulo activity to various databases from the API
 
-We know you're excited to get your Qumulo API data into your centralized databases and monitoring systems. Use this script to send activity (throughput, data and metadata IOPS) by path and client into influx, elastic search, postgres, splunk, and/or csv.
+We know you're excited to get your Qumulo API data into your centralized databases and monitoring systems. Use this script to send activity (throughput, data and metadata IOPS) by path and client into influx, elastic search, postgres, Splunk, and/or csv.
 
 1. Install the python 2.7 prequisites. `pip install qumulo_api`
 2. Copy `sample-config.json` to `config.json` and then specify your databases and Qumulo clusters you wish to use in the new `config.json` file.
@@ -92,7 +92,7 @@ The `"QUMULO_CLUSTERS"` section allows for multiple Qumulo clusters to be tracke
         "event": "qumulo_fs_activity"
 },
 ```
-For the vaarious databases, you will need to have your own DB server set up to pass the data. You will also potentially need to create a new database withing the DB server. For splunk, you will need to enable the /services/collector/event in splunk and generate a token for the configuration file.
+For the vaarious databases, you will need to have your own DB server set up to pass the data. You will also potentially need to create a new database within the DB server. For Splunk, you will need to enable the /services/collector/event in Splunk and generate a token for the configuration file.
 
 
 The configuration parameters are pretty self-explanatory and described below.
